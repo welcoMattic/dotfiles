@@ -1,0 +1,1 @@
+export ANSIBLE_STDOUT_CALLBACK=debug

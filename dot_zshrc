@@ -1,0 +1,8 @@
+chmod +x $HOME/.zshrc.d/*.zshrc
+
+for file in `ls $HOME/.zshrc.d/*.zshrc`;
+do
+  source $file
+done
+
+PIPENV_VERBOSITY=-1

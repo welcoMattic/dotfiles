@@ -1,0 +1,10 @@
+!include ".config/rofi/config.rc"
+
+! =================
+!       Xft
+! =================
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: subpixel
+Xft.hinting: true
+Xft.hintstyle: hintslight
