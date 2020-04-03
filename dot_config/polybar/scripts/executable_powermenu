@@ -2,9 +2,9 @@
 
 ## Created By Aditya Shakya
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -yoffset 882 -xoffset 0 -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 -font "Misc Termsyn 12" <<< " Lock| Logout| Reboot| Shutdown")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -yoffset 30 -xoffset 0 -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 <<< " Lock| Logout| Reboot| Shutdown")"
             case "$MENU" in
-                *Lock) i3lock-fancy -p -- scrot -z ;;
+                *Lock) i3lock-fancy ;;
                 *Logout) i3-msg exit ;;
                 *Reboot) systemctl reboot ;;
                 *Shutdown) systemctl -i poweroff

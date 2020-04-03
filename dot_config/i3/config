@@ -161,13 +161,12 @@ for_window [class="Cozy Drive"] floating enable
 ## Multimedia Keys
 
 # playerctl controls
-bindsym XF86WakeUp+Space exec playerctl --all-players play-pause
-bindsym XF86WakeUp+Left exec playerctl --all-players previous
-bindsym XF86WakeUp+Right exec playerctl --all-players next
+#bindsym XF86WakeUp+Space exec playerctl --all-players play-pause
+#bindsym XF86WakeUp+Left exec playerctl --all-players previous
+#bindsym XF86WakeUp+Right exec playerctl --all-players next
 
-
-bindsym XF86Switch_VT_11 exec playerctl --all-players previous
-bindsym XF86Switch_VT_12 exec playerctl --all-players next
+#bindsym XF86Switch_VT_11 exec playerctl --all-players previous
+#bindsym XF86Switch_VT_12 exec playerctl --all-players next
 
 # volume
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
@@ -199,7 +198,6 @@ exec --no-startup-id alacritty
 exec --no-startup-id firefox
 exec --no-startup-id com.github.davidmhewitt.clipped
 exec --no-startup-id cozy-desktop
-# exec --no-startup-id dunst -config ~/.config/dunst/dunstrc &
 
 # Windows assignment
 assign [class="termite|Alacritty"] $ws1
@@ -226,6 +224,7 @@ for_window [class="^.*"] title_format " %title"
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/scripts/spotify/launchlistener.sh
 
 # Fond d'écran
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/current.png
