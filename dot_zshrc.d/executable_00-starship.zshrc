@@ -2,14 +2,21 @@ eval "$(starship init zsh)"
 
 autoload -U compinit && compinit
 
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='nano'
- fi
+autoload -Uz compinit
+zmodload zsh/complist
 
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-DEFAULT_USER=$USER
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+  compinit;
+else
+  compinit -C;
+fi;
 
-PATH=$PATH:~/.yarn/bin
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=10000
+
+zstyle ':completion:*' menu select
+
