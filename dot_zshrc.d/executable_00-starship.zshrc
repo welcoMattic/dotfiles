@@ -1,22 +1,22 @@
 eval "$(starship init zsh)"
 
-autoload -U compinit && compinit
+export DISABLE_AUTO_TITLE='true'
 
-autoload -Uz compinit
-zmodload zsh/complist
+autoload -U compinit && compinit
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-  compinit;
-else
-  compinit -C;
-fi;
 
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 
 zstyle ':completion:*' menu select
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=white'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=white'
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,underline"
