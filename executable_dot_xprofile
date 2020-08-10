@@ -1,5 +1,3 @@
 ~/.config/polybar/scripts/spotify/launchlistener.sh > /var/log/polybar.log 2>&1 &
 
 nvidia-xconfig -c ~/.nvidia-settings
-
-xset r rate 165 25
