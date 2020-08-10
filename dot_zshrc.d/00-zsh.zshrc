@@ -13,3 +13,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 DEFAULT_USER=$USER
 
 PATH=$PATH:~/.yarn/bin
+
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa
