@@ -1,0 +1,7 @@
+configuration {
+  show-icons: true;
+  icon-theme: "la-capitaine";
+  location: 5;
+  yoffset: -50;
+  xoffset: -20;
+}

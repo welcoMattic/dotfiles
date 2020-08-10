@@ -21,10 +21,8 @@ bindsym $mod+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+space exec rofi -show drun
-bindsym $mod+Shift+space exec rofi -show run
-bindsym $mod+Tab exec rofi -show window
-bindsym $mod+e exec rofimoji
+bindsym $mod+space exec rofi -no-lazy-grab -show drun -theme /usr/share/rofi/themes/slingshot.rasi
+bindsym $mod+e exec rofimoji --rofi-args "-theme /usr/share/rofi/themes/slingshot.rasi"
 
 # change focus
 bindsym $mod+Left focus left
@@ -114,7 +112,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+z exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock
-bindsym $mod+Shift+x exec i3lock-fancy
+bindsym $mod+Shift+x exec multilockscreen -l --display 2 --span
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -188,16 +186,14 @@ bindsym $mod+w exec "/usr/bin/firefox"
 bindsym $mod+n exec "/usr/bin/nautilus"
 
 # Autostart apps
-exec --no-startup-id xset b off
+exec --no-startup-id "xset b off"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id "compton -cC"
+exec --no-startup-id "picom -cC --config ~/.config/picom.conf --xrender-sync-fence"
 exec --no-startup-id nm-applet
-exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 20s && pamac-tray"
 exec --no-startup-id alacritty
 exec --no-startup-id firefox
 exec --no-startup-id com.github.davidmhewitt.clipped
-exec --no-startup-id cozy-desktop
 
 # Windows assignment
 assign [class="termite|Alacritty"] $ws1
@@ -227,7 +223,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/polybar/scripts/spotify/launchlistener.sh
 
 # Fond d'écran
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/current.png
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/current.jpg
 
 # Clipped
 bindsym $mod+c exec com.github.davidmhewitt.clipped

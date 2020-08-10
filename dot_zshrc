@@ -4,5 +4,3 @@ for file in `ls $HOME/.zshrc.d/*.zshrc`;
 do
   source $file
 done
-
-PIPENV_VERBOSITY=-1

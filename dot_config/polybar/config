@@ -55,8 +55,7 @@ volume-max = #c23127
 [bar/top]
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
-monitor = ${env:MONITOR}
-monitor-fallback = DP-2
+monitor = ${env:MONITOR:DP-2}
 monitor-strict = false
 override-redirect = false
 bottom = false
@@ -888,7 +887,7 @@ content-foreground = ${colors.foreground}
 content-underline = #3ED13F
 
 ; "click-(left|middle|right)" will be executed using "/usr/bin/env sh -c $COMMAND"
-click-left = ~/.config/polybar/scripts/powermenu
+click-left = ~/.config/rofi/scripts/powermenu.sh
 
 ################################################################################
 

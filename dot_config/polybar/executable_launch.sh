@@ -13,13 +13,15 @@ killall -q polybar
 while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
 if type "xrandr" > /dev/null; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  for m in $(polybar -m|tail -2|sed -e 's/:.*$//g'); do
     MONITOR=$m polybar --reload top -c ~/.config/polybar/config &
   done
 else
-  polybar --reload top -c ~/.config/polybar/config &
+  MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g') polybar --reload top -c ~/.config/polybar/config &
 fi
-  # second polybar at bottom
+
+# UPDATE MONITOR /!\
+# second polybar at bottom
 #if type "xrandr" > /dev/null; then
 #  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 #    MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
