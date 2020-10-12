@@ -30,3 +30,4 @@ alias update='sudo pacman -Syyu'
 # GNU candies Rust rewritten
 alias ll="exa -lgha"
 alias grep="rg"
+alias cat="bat"

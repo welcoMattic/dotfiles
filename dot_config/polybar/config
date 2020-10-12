@@ -94,10 +94,11 @@ font-0 = "Noto Sans:size=10;0"
 font-1 = "FontAwesome:size=10;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
+font-4 = "NotoSans Nerd Font Mono:size=10;0"
 
 modules-left = i3
 modules-center = previous playpause next spotify
-modules-right = networkspeeddown sep networkspeedup sep memory2 sep cpu2 sep date sep pavolume sep battery sep powermenu
+modules-right = networkspeeddown sep networkspeedup sep memory2 sep cpu2 sep date sep pavolume sep notifications sep battery sep powermenu
 
 ;dim-value = 1.0
 
@@ -289,8 +290,8 @@ ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
@@ -832,6 +833,20 @@ format-connected-underline = #3EC13F
 
 ################################################################################
 
+[module/notifications]
+type = custom/script
+exec = ~/.config/polybar/scripts/xfce4-notifyd.sh
+label = %output%
+interval = 1000
+tail = true
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-underline = #3EC13F
+click-left = xfconf-query -c xfce4-notifyd -p /do-not-disturb -T
+click-right = exec xfce4-notifyd-config & 
+
+################################################################################
+
 [module/pacman-updates]
 type = custom/script
 ;exec = pacman -Qu | wc -l
@@ -867,7 +882,7 @@ type = custom/script
 tail = true
 label = %output%
 exec = ~/.config/polybar/scripts/pavolume.sh --listen
-click-right = exec pavucontrol
+click-right = exec pavucontrol &
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
@@ -887,7 +902,7 @@ content-foreground = ${colors.foreground}
 content-underline = #3ED13F
 
 ; "click-(left|middle|right)" will be executed using "/usr/bin/env sh -c $COMMAND"
-click-left = ~/.config/rofi/scripts/powermenu.sh
+click-left = ~/.config/rofi/android/powermenu.sh
 
 ################################################################################
 
@@ -902,6 +917,24 @@ format-underline = #FFBB00
 label = %output%
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
+
+################################################################################
+
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+label=""
+format-underline = #3384d0
+
+exec = ~/.config/polybar/scripts/pulseaudio-control.bash listen
+click-left = exec pavucontrol &
+click-right = ~/.config/polybar/scripts/pulseaudio-control.bash togmute
+;click-middle = ~/.config/polybar/scripts/pulseaudio-control.bash next-sink
+;scroll-up = ~/.config/polybar/scripts/pulseaudio-control.bash up
+;scroll-down = ~/.config/polybar/scripts/pulseaudio-control.bash down
+label-padding = 2
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 
 ################################################################################
 
@@ -942,7 +975,7 @@ format-underline = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 line-size = 1
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+click-left = "spotify-control previous"
 
 [module/next]
 type = custom/script
@@ -957,7 +990,7 @@ format-underline = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 line-size = 1
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+click-left = "spotify-control next"
 
 [module/playpause]
 type = custom/ipc
@@ -973,12 +1006,12 @@ format-underline = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 line-size = 1
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+click-left = "spotify-control play_pause"
 
 [module/spotify]
 type = custom/ipc
 hook-0 = echo ""
-hook-1 = python3 ~/.config/polybar/scripts/spotify/spotify_status.py
+hook-1 = spotify-control status
 initial = 1
 format-padding = 3
 format-underline = #3EC13F

@@ -194,6 +194,7 @@ exec --no-startup-id "sleep 20s && pamac-tray"
 exec --no-startup-id alacritty
 exec --no-startup-id firefox
 exec --no-startup-id com.github.davidmhewitt.clipped
+exec --no-stratup-id "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 
 # Windows assignment
 assign [class="termite|Alacritty"] $ws1
@@ -222,14 +223,14 @@ for_window [class="^.*"] title_format " %title"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/polybar/scripts/spotify/launchlistener.sh
 
-# Fond d'écran
+# wallpapper
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/current.jpg
 
-# Clipped
+# clipboard manager
 bindsym $mod+c exec com.github.davidmhewitt.clipped
 
-# Deeping-screenshot
-bindsym --release $mod+Shift+s exec deepin-screenshot
+# screenshot
+bindsym --release $mod+Shift+s exec flameshot gui
 
 # xrandr
 exec_always --no-startup-id /usr/bin/poll-xrandr -i 2 >/dev/null 2>&1 &
