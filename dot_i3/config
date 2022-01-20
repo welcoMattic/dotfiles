@@ -24,6 +24,9 @@ floating_modifier $mod
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+default_border none
+default_floating_border none
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
