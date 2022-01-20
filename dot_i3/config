@@ -21,6 +21,9 @@ font xft:URWGothic-Book 11
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
