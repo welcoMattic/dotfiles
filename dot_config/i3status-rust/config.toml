@@ -1,0 +1,127 @@
+theme = "dracula.toml"
+
+[icons]
+name = "awesome5"
+
+[icons.overrides]
+music = "\uf1bc"
+music_next = "\uf051"
+music_prev = "\uf048"
+
+[[block]]
+block = "music"
+player = "spotify"
+buttons = ["prev", "play", "next"]
+on_collapsed_click = "spotify"
+on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+hide_when_empty = false
+marquee_interval = 5
+marquee_speed = 0.3
+dynamic_width = true
+max_width = 120
+format = "{combo}"
+[block.theme_overrides]
+info_bg = "#50fa7b"
+idle_bg = "#50fa7b"
+idle_fg = "#282a36"
+
+[[block]]
+block = "music"
+interface_name_exclude = ["spotify"]
+buttons = ["prev", "play", "next"]
+hide_when_empty = true
+marquee_interval = 5
+marquee_speed = 0.3
+max_width = 120
+dynamic_width = true
+format = "{combo}"
+
+# Bose QC35 II
+[[block]]
+block = "bluetooth"
+mac = "2C:41:A1:04:21:AA"
+format = "\uf025"
+format_unavailable = "\uf025 x"
+hide_disconnected = false
+
+# BIMBADABIMBIMBADABADABOOM
+#[[block]]
+#block = "bluetooth"
+#mac = "C0:28:8D:91:9E:7C"
+#format = "\uf192"
+#format_unavailable = "\uf192 x"
+#hide_disconnected = false
+
+[[block]]
+block = "bluetooth"
+mac = "F8:E5:3A:4D:12:5C"
+format = "{percentage}"
+format_unavailable = "🖱 x"
+hide_disconnected = false
+
+#[[block]]
+#block = "disk_space"
+#path = "/"
+#alias = "/"
+#info_type = "available"
+#unit = "GB"
+#interval = 20
+#warning = 20.0
+#alert = 10.0
+#format = "{icon} {free}/{total}"
+
+#[[block]]
+#block = "memory"
+#display_type = "memory"
+#format_mem = "{mem_used}"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}"
+
+#[[block]]
+#block = "net"
+#device = "wlp0s20f3"
+#format = "{speed_down;K*b} {speed_up;K*b}"
+#interval = 5
+
+[[block]]
+block = "sound"
+on_click = "pavucontrol"
+
+[[block]]
+block = "toggle"
+text = "\uf109"
+command_state = "xrandr | grep DP-1\\ disconnected"
+command_on = "autorandr laptop"
+command_off = "autorandr docked"
+interval = 2
+
+[[block]]
+block = "toggle"
+text = ""
+command_state = "xfconf-query -c xfce4-notifyd -p /do-not-disturb | grep true"
+command_on = "xfconf-query -c xfce4-notifyd -p /do-not-disturb -s true"
+command_off = "xfconf-query -c xfce4-notifyd -p /do-not-disturb -s false"
+interval = 10
+icon_on = "bell-slash"
+icon_off = "bell"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%d/%m/%Y %R"
+timezone = "Europe/Paris"
+interval = 60
+locale = "fr_FR"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}"
+full_threshold = 99
+good = 60
+info = 50
+warning = 30
+critical = 15
