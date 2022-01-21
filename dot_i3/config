@@ -8,7 +8,7 @@ set $mod Mod4
 workspace_layout default
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 2
 default_floating_border normal
 
 # Hide borders
