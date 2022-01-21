@@ -8,7 +8,7 @@ set $mod Mod4
 workspace_layout default
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2
+default_border pixel 1
 default_floating_border normal
 
 # Hide borders
@@ -23,9 +23,6 @@ floating_modifier $mod
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-default_border none
-default_floating_border none
 
 # start a terminal
 bindsym $mod+Return exec alacritty
