@@ -258,6 +258,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id pamac-tray
 exec --no-startup-id gpaste-client start
 exec --no-startup-id blueman-applet
+exec --no-startup-id flameshot
 #exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
 
