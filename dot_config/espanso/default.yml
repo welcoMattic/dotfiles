@@ -13,8 +13,6 @@ matches:
     propagate_case: true
   - trigger: "..."
     replace: "…"
-  - trigger: ":..."
-    replace: "…"
   - trigger: ":i18n"
     replace: "internationalization"
   - trigger: ":l10n"
