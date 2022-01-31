@@ -2,7 +2,4 @@ filter_class: 'jetbrains-phpstorm'
 
 enable_active: false
 enable_passive: true
-
-matches:
-  - trigger: "..."
-    replace: "…"
+passive_key: CTRL
