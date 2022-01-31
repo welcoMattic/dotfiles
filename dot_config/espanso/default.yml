@@ -13,6 +13,8 @@ matches:
     propagate_case: true
   - trigger: "..."
     replace: "…"
+  - trigger: ":..."
+    replace: "…"
   - trigger: ":i18n"
     replace: "internationalization"
   - trigger: ":l10n"
@@ -25,3 +27,4 @@ matches:
     replace: "abbreviation"
 
 toggle_key: OFF
+passive_key: CTRL
