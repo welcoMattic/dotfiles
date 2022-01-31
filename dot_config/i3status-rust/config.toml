@@ -61,14 +61,6 @@ format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
 
-[[block]]
-block = "toggle"
-text = "\uf246"
-command_state = "espanso status | grep 'espanso is running'"
-command_on = "espanso cmd enable"
-command_off = "espanso cmd disable"
-interval = 2
-
 #[[block]]
 #block = "disk_space"
 #path = "/"
@@ -99,6 +91,14 @@ format = "{utilization}"
 [[block]]
 block = "sound"
 on_click = "pavucontrol"
+
+#[[block]]
+#block = "toggle"
+#text = "\uf246"
+#command_state = "espanso status | grep 'espanso is running'"
+#command_on = "espanso cmd enable"
+#command_off = "espanso cmd disable"
+#interval = 2
 
 [[block]]
 block = "toggle"
