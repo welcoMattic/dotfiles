@@ -61,6 +61,14 @@ format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
 
+[[block]]
+block = "toggle"
+text = "espanso"
+command_state = "espanso status | grep 'espanso is running'"
+command_on = "espanso cmd enable"
+command_off = "espanso cms disable"
+interval = 2
+
 #[[block]]
 #block = "disk_space"
 #path = "/"
