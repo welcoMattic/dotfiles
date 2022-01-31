@@ -1,7 +1,5 @@
 # espanso configuration file
 
-toggle_key: OFF
-
 matches:
   - trigger: ":date"
     replace: "{{mydate}}"
@@ -26,4 +24,5 @@ matches:
   - trigger: ":abbr"
     replace: "abbreviation"
 
+toggle_key: OFF
 passive_key: RIGHT_CTRL
