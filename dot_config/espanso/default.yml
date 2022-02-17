@@ -23,5 +23,9 @@ matches:
     replace: "accessibility"
   - trigger: ":abbr"
     replace: "abbreviation"
+  - trigger: ":mail"
+    replace: "msantostefano@protonmail.com"
+  - trigger: ":mailpro"
+    replace: "msantostefano@jolicode.com"
 
 toggle_key: OFF
