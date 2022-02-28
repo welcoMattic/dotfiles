@@ -21,7 +21,7 @@ dynamic_width = true
 max_width = 120
 format = "{combo} "
 [block.theme_overrides]
-info_bg = "#50fa7b"
+#info_bg = "#50fa7b"
 idle_bg = "#50fa7b"
 idle_fg = "#282a36"
 
