@@ -19,7 +19,7 @@ marquee_interval = 5
 marquee_speed = 0.3
 dynamic_width = true
 max_width = 120
-format = "{combo}"
+format = "{combo} "
 [block.theme_overrides]
 info_bg = "#50fa7b"
 idle_bg = "#50fa7b"
