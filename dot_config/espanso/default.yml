@@ -25,7 +25,7 @@ matches:
     replace: "abbreviation"
   - trigger: ":mail"
     replace: "msantostefano@protonmail.com"
-  - trigger: ":mailpro"
+  - trigger: ":jolimail"
     replace: "msantostefano@jolicode.com"
 
 toggle_key: OFF
