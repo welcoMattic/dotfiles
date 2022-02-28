@@ -61,44 +61,25 @@ format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
 
-#[[block]]
-#block = "disk_space"
-#path = "/"
-#alias = "/"
-#info_type = "available"
-#unit = "GB"
-#interval = 20
-#warning = 20.0
-#alert = 10.0
-#format = "{icon} {free}/{total}"
-
-#[[block]]
-#block = "memory"
-#display_type = "memory"
-#format_mem = "{mem_used}"
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{mem_used}"
 
 [[block]]
 block = "cpu"
 interval = 1
 format = "{utilization}"
 
-#[[block]]
-#block = "net"
-#device = "wlp0s20f3"
-#format = "{speed_down;K*b} {speed_up;K*b}"
-#interval = 5
+[[block]]
+block = "net"
+device = "wlp0s20f3"
+format = "{speed_down;K*b} {speed_up;K*b}"
+interval = 2
 
 [[block]]
 block = "sound"
 on_click = "pavucontrol"
-
-#[[block]]
-#block = "toggle"
-#text = "\uf246"
-#command_state = "espanso status | grep 'espanso is running'"
-#command_on = "espanso cmd enable"
-#command_off = "espanso cmd disable"
-#interval = 2
 
 [[block]]
 block = "toggle"
@@ -135,3 +116,7 @@ good = 60
 info = 50
 warning = 30
 critical = 15
+allow_missing = true
+[block.theme_overrides]
+good_bg = "#282a36"
+good_fg = "#f8f8f2"
