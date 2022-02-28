@@ -62,7 +62,7 @@ format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
 [block.theme_overrides]
-info_bg = "#282136"
+info_bg = "#282A36"
 info_fg = "#F8F8F2"
 idle_fg = "#abcdef"
 
