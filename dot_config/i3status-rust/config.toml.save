@@ -39,7 +39,7 @@ format = "{combo}"
 # Bose QC35 II
 [[block]]
 block = "bluetooth"
-mac = "F8:E5:3A:4D:12:5D"
+mac = "2C:41:A1:04:21:AA"
 format = "\uf025"
 format_unavailable = "\uf025 x"
 hide_disconnected = false
@@ -56,7 +56,7 @@ hide_disconnected = false
 
 [[block]]
 block = "bluetooth"
-mac = "F8:E5:3A:4D:12:5D"
+mac = ""
 format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
