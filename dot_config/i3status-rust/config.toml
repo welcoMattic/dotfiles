@@ -35,6 +35,8 @@ marquee_speed = 0.3
 max_width = 120
 dynamic_width = true
 format = "{combo}"
+[block.icons_overrides]
+music = "\uf144"
 
 # Bose QC35 II
 [[block]]
