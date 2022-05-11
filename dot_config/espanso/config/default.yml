@@ -1,0 +1,3 @@
+toggle_key: OFF
+backend: Clipboard
+auto_restart: true
