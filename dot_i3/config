@@ -229,7 +229,7 @@ mode "resize" {
 }
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale /home/welcomattic/Pictures/wallpapers/big-sur-dark.jpg
+#exec --no-startup-id feh --bg-scale /home/welcomattic/Pictures/wallpapers/big-sur-dark.jpg
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
