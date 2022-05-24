@@ -248,6 +248,7 @@ exec --no-startup-id flameshot
 exec --no-startup-id landrop
 #exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
+exec --no-startup-id ulauncher &
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
