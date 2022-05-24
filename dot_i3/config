@@ -32,7 +32,8 @@ bindsym $mod+q kill
 
 # start program launcher
 #bindsym $mod+space exec --no-startup-id "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu'"
-bindsym $mod+space exec --no-startup-id rofi -show drun
+#bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym $mod+space exec --no-statup-id ulauncher-toggle
 
 # emoji picker
 bindsym $mod+e exec --no-startup-id emote
