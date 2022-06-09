@@ -13,7 +13,7 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.9
+  opacity: 1
 
   # Window dimensions (changes require restart)
   #
