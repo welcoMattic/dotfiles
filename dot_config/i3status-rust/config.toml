@@ -62,8 +62,8 @@ good_bg = "#bd93f9"
 [[block]]
 block = "bluetooth"
 mac = "AC:90:85:DC:48:8C"
-format = "\uf192"
-format_unavailable = "\uf192 x"
+format = "\uf179 \uf58f"
+format_unavailable = "\uf179 \uf58f x"
 hide_disconnected = false
 [block.theme_overrides]
 good_bg = "#bd93f9"
