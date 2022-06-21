@@ -326,7 +326,8 @@ client.background       #F8F8F2
 #############################
 
 # Set inner/outer gaps
-gaps outer 6
+gaps outer 2
+gaps inner 2
 
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
