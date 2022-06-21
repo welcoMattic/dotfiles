@@ -327,7 +327,7 @@ client.background       #F8F8F2
 
 # Set inner/outer gaps
 gaps inner 6
-gaps outer 1
+gaps outer -1
 
 # Smart gaps (Only enable outer gaps when there is exactly one container)
 smart_gaps inverse_outer
