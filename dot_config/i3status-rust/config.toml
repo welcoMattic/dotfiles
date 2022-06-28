@@ -136,7 +136,6 @@ good = 60
 info = 50
 warning = 30
 critical = 15
-allow_missing = true
 [block.theme_overrides]
 good_bg = "#282a36"
 good_fg = "#f8f8f2"
