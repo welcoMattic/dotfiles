@@ -253,6 +253,7 @@ exec --no-startup-id landrop
 #exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id ulauncher &
+exec --no-startup-id xrandr | grep -q "DP-1 connected" && autorandr docked || autorandr laptop
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
