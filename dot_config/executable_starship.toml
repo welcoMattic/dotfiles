@@ -1,0 +1,22 @@
+add_newline = false
+
+format = """\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$python\
+$rust\
+$line_break\
+$character\
+"""
+
+[character]
+success_symbol = "[➜](bold green)"
+
+[python]
+symbol = " "
+
+[git_branch]
+symbol = " "
