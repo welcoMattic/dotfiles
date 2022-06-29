@@ -20,3 +20,5 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=white'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=white'
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,underline"
+
+export SPACESHIP_EXEC_TIME_SHOW=false

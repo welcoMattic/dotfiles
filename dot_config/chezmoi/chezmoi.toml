@@ -1,0 +1,4 @@
+[git]
+    autoCommit = true
+[edit]
+    command = "nano"
