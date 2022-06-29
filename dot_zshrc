@@ -5,6 +5,27 @@ do
   source $file
 done
 
+export DISABLE_AUTO_TITLE='true'
+
+autoload -U compinit && compinit
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-subs>
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti>
+
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=50000
+
+zstyle ':completion:*' menu select
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=white'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=white'
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,underline"
+
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
