@@ -1,0 +1,105 @@
+[user]
+    name = Mathieu Santostefano
+    email = msantostefano@protonmail.com
+    signingkey = EB610773AF2B5B5B
+
+[alias]
+    s = status
+    st = status
+    ci = commit
+    co = checkout
+    sw = switch
+    lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+    oops = commit --amend --no-edit
+    rc = rebase --continue
+    rs = rebase --skip
+    ra = rebase --abort
+    rbi = "!f() { git rebase -i HEAD~$1; }; f"
+    brc = ! git branch --no-color --merged | /bin/grep -v '*' | /bin/grep -v master | xargs --no-run-if-empty git branch -d
+    fixup = commit --amend --no-edit
+    kick = ! git add . && git fixup && git push -f
+
+[branch]
+    autosetupmerge  = false
+    rebase = true
+
+[color]
+    ui = true
+    status = always
+
+[commit]
+    gpgsign = true 
+
+[core]
+    whitespace = -trailing-space
+    excludesfile = ~/.gitignore_global
+    editor = nano -w
+    pager = less
+
+[diff]
+    renames = true
+    wordRegex = .
+
+[fetch]
+    prune = true
+
+[github]
+    user = welcoMattic
+
+[grep]
+    extendedRegex = true
+
+[help] 
+    autocorrect = 1 
+
+[log] 
+    abbrevCommit = true 
+    follow = true 
+
+[merge] 
+    summary = true
+
+[mergetool] 
+    keepBackup = false 
+    keepTemporaries = false 
+    writeToTemp = true 
+    prompt = false 
+
+[pull] 
+    # This is GREAT… when you know what you're doing and are careful 
+    # not to pull --no-rebase over a local line containing a true merge. 
+    # rebase = true 
+    # WARNING! This option, which does away with the one gotcha of 
+    # auto-rebasing on pulls, is only available from 1.8.5 onwards. 
+    rebase = merges
+
+[push] 
+    default = tracking 
+    followTags = true 
+
+[rebase] 
+    autostash = true 
+    autorebase = true
+
+[rerere]
+    enabled = true
+
+[status] 
+    submoduleSummary = true 
+    showUntrackedFiles = all 
+
+[color "branch"] 
+    upstream = cyan 
+
+[tag] 
+    sort = version:refname 
+
+[versionsort] 
+    prereleaseSuffix = -pre 
+    prereleaseSuffix = .pre 
+    prereleaseSuffix = -beta 
+    prereleaseSuffix = .beta 
+    prereleaseSuffix = -rc 
+    prereleaseSuffix = .rc 
+[gpg]
+    program = gpg2
