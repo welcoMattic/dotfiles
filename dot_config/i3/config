@@ -31,7 +31,6 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start program launcher
-#bindsym $mod+space exec --no-startup-id "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu'"
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
 # emoji picker
@@ -167,15 +166,12 @@ assign [class="Alactritty"] $ws1
 assign [class="jetbrains-phpstorm"] $ws2
 assign [class="firefox"] $ws3
 assign [class="Slack"] $ws4
-assign [class="discord"] $ws5
-assign [class="Spotify"] $ws6
+assign [class="Spotify"] $ws5
 
 # Open specific applications in floating mode
 for_window [class="GParted"] floating enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
@@ -233,16 +229,11 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id picom --backend glx --vsync
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id pamac-tray
 exec --no-startup-id gpaste-client start
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
-exec --no-startup-id landrop
-#exec --no-startup-id start_conky_maia
-exec_always --no-startup-id fix_xcursor
-exec --no-startup-id ulauncher &
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
