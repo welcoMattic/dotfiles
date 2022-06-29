@@ -1,0 +1,42 @@
+#!/bin/bash
+set -eu
+
+RESOLUTION=$(xrandr -q|sed -n 's/.*current[ ]\([0-9]*\) x \([0-9]*\),.*/\1x\2/p')
+
+alpha='dd'
+base01='#282a36'
+yellow='#F1FA8C'
+orange='#FFB86C'
+red='#FF5555'
+magenta='#FF79C6'
+violet='#BD93F9'
+blue='#6272A4'
+cyan='#8BE9FD'
+green='#50FA7B'
+
+# lock the screen
+import -silent -window root jpeg:- | convert - -scale 20% -blur 0x2.5 -resize 500% RGB:- | \
+    i3lock \
+    --raw $RESOLUTION:rgb \
+    -i /dev/stdin \
+    -e \
+    --insidever-color=#FFFFFF00 \
+    --insidewrong-color=#FFFFFF00 \
+    --inside-color=#FFFFFF00 \
+    --ringwrong-color=$red$alpha \
+    --ringver-color=$green$alpha \
+    --ring-color=$blue$alpha \
+    --keyhl-color=$magenta$alpha \
+    --bshl-color=$orange$alpha \
+    --separator-color=$base01$alpha \
+    --verif-color=$green \
+    --wrong-color=$red \
+    --layout-color=$blue \
+    --date-color=$blue \
+    --time-color=$blue \
+    $@
+    
+# sleep 1 adds a small delay to prevent possible race conditions with suspend
+#sleep 1
+
+exit 0
