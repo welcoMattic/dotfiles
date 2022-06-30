@@ -102,6 +102,10 @@ block = "sound"
 on_click = "pavucontrol"
 
 [[block]]
+block = "backlight"
+device = "intel_backlight"
+
+[[block]]
 block = "toggle"
 text = "\uf109"
 command_state = "xrandr | grep DP-1\\ disconnected"
