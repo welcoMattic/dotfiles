@@ -135,7 +135,7 @@ locale = "fr_FR"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage} {time}|"
+format = "$percentage {time}"
 full_threshold = 100
 good = 60
 info = 50
