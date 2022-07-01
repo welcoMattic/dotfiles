@@ -135,12 +135,12 @@ locale = "fr_FR"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage} {time}"
+format = "{percentage} {time}|"
 full_threshold = 100
 good = 60
 info = 50
-warning = 30
-critical = 15
+warning = 20
+critical = 10
 [block.theme_overrides]
 good_bg = "#282a36"
 good_fg = "#f8f8f2"
