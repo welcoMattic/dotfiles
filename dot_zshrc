@@ -21,6 +21,9 @@ zstyle ':completion:*' menu select
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=green,fg=white'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=white'
 
