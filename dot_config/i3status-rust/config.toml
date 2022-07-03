@@ -109,9 +109,9 @@ invert_icons = true
 [[block]]
 block = "toggle"
 text = "\uf109"
-command_state = "xrandr | grep HDMI1\\ connected"
-command_on = "~/.screenlayout/laptop.sh"
-command_off = "~/.screenlayout/desktop.sh"
+command_state = "xrandr | grep HDMI1\\ disconnected"
+command_on = "~/.screenlayout/desktop.sh"
+command_off = "~/.screenlayout/laptop.sh"
 interval = 1
 
 [[block]]
