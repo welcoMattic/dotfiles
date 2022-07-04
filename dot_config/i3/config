@@ -240,7 +240,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id gpaste-client start
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
-exec --no-stratup-id ~/.config/scripts/xborders --border-radius=8 --border-width=2 --border-rgba=0x8BE9FDFF --disable-drag-stress-toy
+exec_always --no-stratup-id ~/.config/scripts/xborders --border-radius=8 --border-width=2 --border-rgba=0x8BE9FDFF --disable-drag-stress-toy
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
