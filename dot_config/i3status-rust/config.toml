@@ -72,7 +72,7 @@ good_bg = "#bd93f9"
 # Logitech MX Master
 [[block]]
 block = "bluetooth"
-mac = "F8:E5:3A:4D:12:5D"
+mac = "F8:E5:3A:4D:12:5E"
 format = "{percentage}"
 format_unavailable = "🖱 x"
 hide_disconnected = false
