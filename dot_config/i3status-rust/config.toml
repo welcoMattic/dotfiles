@@ -1,7 +1,7 @@
 theme = "dracula.toml"
 
 [icons]
-name = "awesome5"
+name = "awesome6"
 
 [icons.overrides]
 music = "\uf1bc"
