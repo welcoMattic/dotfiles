@@ -8,7 +8,7 @@ set $mod Mod4
 workspace_layout default
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 4
+default_border none
 default_floating_border normal
 
 # Hide borders
@@ -181,8 +181,6 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 
-for_window [class="^.*"] border pixel 1
-
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -240,7 +238,6 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id gpaste-client start
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
-exec_always --no-startup-id ~/.config/scripts/xborders --border-radius=8 --border-width=2 --border-rgba=0x8BE9FDFF --disable-drag-stress-toy
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
