@@ -4,7 +4,7 @@ theme = "dracula.toml"
 name = "awesome6"
 
 [scrolling]
-natural = true
+natural = "true"
 
 [icons.overrides]
 music_next = "\uf051"
