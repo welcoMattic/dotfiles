@@ -9,7 +9,6 @@ workspace_layout default
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 4
-i3-msg [class=.\*] border pixel 1
 default_floating_border normal
 
 # Hide borders
