@@ -109,14 +109,6 @@ invert_icons = true
 
 [[block]]
 block = "toggle"
-text = "\uf109"
-command_state = "xrandr | grep HDMI1\\ disconnected"
-command_on = "~/.screenlayout/desktop.sh"
-command_off = "~/.screenlayout/laptop.sh"
-interval = 1
-
-[[block]]
-block = "toggle"
 text = ""
 command_state = "xfconf-query -c xfce4-notifyd -p /do-not-disturb | grep true"
 command_on = "xfconf-query -c xfce4-notifyd -p /do-not-disturb -s true"
