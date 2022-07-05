@@ -1,7 +1,9 @@
 theme = "dracula.toml"
 scrolling = "natural"
 icons_format = " <span font='15'>{icon}</span> "
-icons = "awesome6"
+
+[icons]
+name = "awesome6"
 
 [icons.overrides]
 music_next = "\uf051"
