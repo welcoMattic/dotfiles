@@ -56,7 +56,7 @@ block = "bluetooth"
 mac = "C0:28:8D:91:9E:7C"
 format = "\uf192"
 format_unavailable = "\uf192 x"
-hide_disconnected = false
+hide_disconnected = true
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -66,7 +66,7 @@ block = "bluetooth"
 mac = "AC:90:85:DC:48:8C"
 format = "\uf179 \uf58f"
 format_unavailable = "\uf179 \uf58f x"
-hide_disconnected = false
+hide_disconnected = true
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -76,7 +76,7 @@ block = "bluetooth"
 mac = "F8:E5:3A:4D:12:5E"
 format = "{percentage}"
 format_unavailable = "🖱 x"
-hide_disconnected = false
+hide_disconnected = true
 [block.theme_overrides]
 good_bg = "#282A36"
 good_fg = "#F8F8F2"
@@ -93,20 +93,20 @@ block = "cpu"
 interval = 1
 format = "{utilization}"
 
-[[block]]
-block = "net"
-device = "wlp0s20f3"
-format = "{speed_down;K*b} {speed_up;K*b}"
-interval = 2
+#[[block]]
+#block = "net"
+#device = "wlp0s20f3"
+#format = "{speed_down;K*b} {speed_up;K*b}"
+#interval = 2
 
 [[block]]
 block = "sound"
 on_click = "pavucontrol"
 
-[[block]]
-block = "backlight"
-device = "intel_backlight"
-invert_icons = true
+#[[block]]
+#block = "backlight"
+#device = "intel_backlight"
+#invert_icons = true
 
 [[block]]
 block = "toggle"
