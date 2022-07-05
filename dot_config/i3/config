@@ -9,7 +9,7 @@ workspace_layout default
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border none
-default_floating_border normal
+default_floating_border none
 
 # Hide borders
 hide_edge_borders none
