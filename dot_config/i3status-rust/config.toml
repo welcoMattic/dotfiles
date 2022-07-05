@@ -24,8 +24,8 @@ format = "{combo} "
 info_bg = "#50fa7b"
 idle_bg = "#282A36"
 idle_fg = "#F8F8F2"
-[block.icons_overrides]
-music = "\uf1bc"
+#[block.icons_overrides]
+#music = "\uf1bc"
 
 [[block]]
 block = "music"
