@@ -173,13 +173,13 @@ assign [class="Slack"] $ws4
 assign [class="Spotify"] $ws5
 
 # Open specific applications in floating mode
-for_window [class="GParted"] floating enable
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable
 for_window [class="Qtconfig-qt4"] floating enable sticky enable
+for_window [class="Imager"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
