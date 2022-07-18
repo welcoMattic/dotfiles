@@ -93,6 +93,14 @@ block = "cpu"
 interval = 1
 format = "{utilization}"
 
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{average}°C"
+chip = "*"
+inputs = ["CPUTIN", "SYSTIN"]
+
 #[[block]]
 #block = "net"
 #device = "wlp0s20f3"
