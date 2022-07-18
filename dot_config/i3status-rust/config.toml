@@ -97,7 +97,7 @@ format = "{utilization}"
 block = "temperature"
 collapsed = false
 interval = 10
-format = "{average}°C"
+format = "{average}C"
 
 #[[block]]
 #block = "net"
