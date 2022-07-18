@@ -98,8 +98,6 @@ block = "temperature"
 collapsed = false
 interval = 10
 format = "{average}°C"
-chip = "*"
-inputs = ["CPUTIN", "SYSTIN"]
 
 #[[block]]
 #block = "net"
