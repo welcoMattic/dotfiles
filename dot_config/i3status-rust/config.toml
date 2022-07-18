@@ -76,7 +76,7 @@ block = "bluetooth"
 mac = "F8:E5:3A:4D:12:5E"
 format = "{percentage}"
 format_unavailable = "🖱 x"
-hide_disconnected = true
+hide_disconnected = false
 [block.theme_overrides]
 good_bg = "#282A36"
 good_fg = "#F8F8F2"
