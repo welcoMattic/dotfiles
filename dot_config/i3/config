@@ -244,6 +244,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id caffeine start
+exec --no-startup-id xbacklight-notify
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
