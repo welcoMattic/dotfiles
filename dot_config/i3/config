@@ -241,6 +241,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id pamac-tray
 exec --no-startup-id gpaste-client start
 exec --no-startup-id blueman-applet
+exec --no-startup-id ulauncher
 exec --no-startup-id flameshot
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id caffeine start
