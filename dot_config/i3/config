@@ -31,7 +31,6 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start program launcher
-#bindsym $mod+space exec --no-startup-id rofi -show drun
 bindsym $mod+space exec --no-startup-id ulauncher-toggle
 
 # emoji picker
