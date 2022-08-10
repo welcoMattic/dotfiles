@@ -68,7 +68,6 @@
     debug_color_alt: Color(r: 1.0, g: 0.0, b: 0.0, a: 1.0), // Secondary color for debug rectangles.
 
     layout_blocks: [
-        // Layout 1, when an image is present.
         (
             name: "root",
             parent: "",
@@ -85,7 +84,6 @@
                 border_color_low: Color(hex: "#6272a4"),
                 border_color_critical: Color(hex: "#ff5555"),
                 border_color_paused: Color(hex: "#44475a"),
-
                 gap: Vec2(x: 0.0, y: 4.0),
                 notification_hook: Hook(parent_anchor: BL, self_anchor: TL),
             )),
@@ -156,9 +154,9 @@
                 border_width: 0.0,
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
-                border_color: (hex: "#1D1F21"),
-                background_color: (hex: "#403D3D"),
-                fill_color: (hex: "#66D9EF"),
+                border_color: (hex: "#bd93f9"),
+                background_color: (hex: "#282a36"),
+                fill_color: (hex: "#8be9fd"),
                 width: 360.0,
                 height: 16.0,
            )),
