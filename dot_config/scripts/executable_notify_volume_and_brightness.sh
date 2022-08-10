@@ -2,7 +2,7 @@
 
 notify_volume() {
     if [ "$(pamixer --get-mute)" = "true" ]; then
-        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'Volume' 'muted'
+        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'muted' -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-none-panel.svg"
     else
         notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" "$(pamixer --get-volume)%" -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-medium-panel.svg"
     fi
