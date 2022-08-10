@@ -74,7 +74,7 @@
             parent: "",
             hook: Hook(parent_anchor: TR, self_anchor: TR),
             offset: Vec2(x: -8.0, y: 34.0),
-            render_criteria: Or([HintImage, AppImage]),
+            render_criteria: [HintImage],
             // https://github.com/Toqozz/wired-notify/wiki/NotificationBlock
             params: NotificationBlock((
                 monitor: 0,
