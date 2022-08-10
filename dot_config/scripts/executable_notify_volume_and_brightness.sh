@@ -1,10 +1,23 @@
 #!/bin/sh
 
 notify_volume() {
-    if [ "$(pamixer --get-mute)" = "true" ]; then
-        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'muted' -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-none-panel.svg"
+    icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-none-panel.svg"
+    vol=$(pamixer --get-volume)
+
+    if [ $vol -lt 30 ]
+    then
+        icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-low-panel.svg"
+    elif [ $vol -lt 60 ]
+        icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-medium-panel.svg"
     else
-        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" "$(pamixer --get-volume)%" -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-medium-panel.svg"
+        icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-high-panel.svg"
+    fi
+
+
+    if [ "$(pamixer --get-mute)" = "true" ]; then
+        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'muted' -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-muted-panel.svg"
+    else
+        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" "$(pamixer --get-volume)%" -i $icon
     fi
 }
 
