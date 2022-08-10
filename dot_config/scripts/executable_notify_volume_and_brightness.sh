@@ -2,14 +2,14 @@
 
 notify_volume() {
 	if [ "$(pamixer --get-mute)" = "true" ]; then
-		notify-send -a progress -t 1000 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'Volume' 'muted'
+		notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'Volume' 'muted'
 	else
-		notify-send -a progress -t 1000 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'Volume' 
+		notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'Volume' 
 	fi
 }
 
 notify_brightness() {
-	notify-send -a progress -t 1000 -h 'string:wired-tag:brightness' -h "int:value:$target" 'Brightness' 
+	notify-send -a progress -t 1500 -h 'string:wired-tag:brightness' -h "int:value:$target" 'Brightness' 
 }
 
 case "$1" in
