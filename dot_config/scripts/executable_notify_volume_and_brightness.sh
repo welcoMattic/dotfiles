@@ -8,8 +8,9 @@ notify_volume() {
     then
         icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-low-panel.svg"
     elif [ $vol -lt 60 ]
+    then
         icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-medium-panel.svg"
-    else
+    else 
         icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-high-panel.svg"
     fi
 
