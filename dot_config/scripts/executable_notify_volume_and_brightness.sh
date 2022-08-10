@@ -4,10 +4,10 @@ notify_volume() {
     icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-none-panel.svg"
     vol=$(pamixer --get-volume)
 
-    if [ $vol -lt 30 ]
+    if [ $vol -lt 25 ]
     then
         icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-low-panel.svg"
-    elif [ $vol -lt 60 ]
+    elif [ $vol -lt 75 ]
     then
         icon="/usr/share/icons/Dracula/24@2x/panel/volume-level-medium-panel.svg"
     else 
