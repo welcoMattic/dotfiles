@@ -62,7 +62,7 @@ bindsym XF86AudioRaiseVolume exec ~/.config/scripts/notify_volume_and_brightness
 bindcode 69 exec ~/.config/scripts/notify_volume_and_brightness.sh up
 bindsym XF86AudioLowerVolume exec ~/.config/scripts/notify_volume_and_brightness.sh down
 bindcode 68 exec ~/.config/scripts/notify_volume_and_brightness.sh down 
-bindsym XF86AudioMute exec ~/.config/scripts/notify_volume_and_brightness.sh  mutetoggle
+bindsym XF86AudioMute exec ~/.config/scripts/notify_volume_and_brightness.sh mutetoggle
 bindcode 67 exec ~/.config/scripts/notify_volume_and_brightness.sh mutetoggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindcode 70 exec --no-startup-id pactl set-source-mute @DEFAULT_SINK@ toggle 
