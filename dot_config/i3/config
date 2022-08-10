@@ -43,8 +43,8 @@ bindsym $mod+c exec --no-startup-id gpaste-client ui
 bindsym $mod+Shift+l exec blurlock
 
 # backlight
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec ~/.config/scripts/notify_volume_and_brightness.sh light_up
+bindsym XF86MonBrightnessDown exec ~/.config/scripts/notify_volume_and_brightness.sh light_down
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -58,12 +58,12 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer -i 5 && notify-send -a progress -t 1000 -h 'string:wired-tag:volume' -h 'int:value:$(pamixer --get-volume)' 'Volume'" 
-bindcode 69 exec --no-startup-id "pamixer -i 5 notify-send -a progress -t 1000 -h 'string:wired-tag:volume' -h 'int:value:$(pamixer --get-volume)' 'Volume'"
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5 
-bindcode 68 exec --no-startup-id pamixer -d 5 
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle 
-bindcode 67 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec ~/.config/scripts/notify_volume_and_brightness.sh up
+bindcode 69 exec ~/.config/scripts/notify_volume_and_brightness.sh up
+bindsym XF86AudioLowerVolume exec ~/.config/scripts/notify_volume_and_brightness.sh down
+bindcode 68 exec ~/.config/scripts/notify_volume_and_brightness.sh down 
+bindsym XF86AudioMute exec ~/.config/scripts/notify_volume_and_brightness.sh  mutetoggle
+bindcode 67 exec ~/.config/scripts/notify_volume_and_brightness.sh mutetoggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindcode 70 exec --no-startup-id pactl set-source-mute @DEFAULT_SINK@ toggle 
 
