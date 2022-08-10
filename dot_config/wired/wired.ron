@@ -114,7 +114,7 @@
             // https://github.com/Toqozz/wired-notify/wiki/TextBlock
             params: TextBlock((
                 text: "%s",
-                font: "Arial Bold 11",
+                font: "SF Pro Display 11",
                 ellipsize: Middle,
                 color: Color(hex: "#f8f8f2"),
                 color_hovered: Color(hex: "#f8f8f2"),
@@ -131,7 +131,7 @@
             // https://github.com/Toqozz/wired-notify/wiki/ScrollingTextBlock
             params: ScrollingTextBlock((
                 text: "%b",
-                font: "Arial 11",
+                font: "SF Pro Display 11",
                 color: Color(hex: "#f8f8f2"),
                 color_hovered: Color(hex: "#f8f8f2"),
                 padding: Padding(left: 7.0, right: 7.0, top: 3.0, bottom: 7.0),
@@ -143,13 +143,13 @@
             )),
         ),
         (
-	    name: "progress",
-	    parent: "body",
-	    offset: (x: 0, y: 0),
-	    hook: (parent_anchor: BL, self_anchor: TL),
-	    render_criteria: [ Progress ],
-	    render_anti_criteria: [ Body ],
-	    params: ProgressBlock((
+            name: "progress",
+            parent: "body",
+            offset: Vec2(x: 0.0, y: 0.0),
+            hook: (parent_anchor: BL, self_anchor: TL),
+            render_criteria: [ Progress ],
+            render_anti_criteria: [ Body ],
+            params: ProgressBlock((
                 padding: (left: 7.0, right: 7.0, top: 0.0, bottom: 7.0),
                 border_width: 0.0,
                 border_rounding: 0.0,
