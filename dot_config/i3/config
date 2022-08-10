@@ -245,6 +245,7 @@ exec --no-startup-id ulauncher
 exec --no-startup-id flameshot
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id caffeine start
+exec --no-startup-id wired -r
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
