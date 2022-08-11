@@ -16,14 +16,14 @@ notify_volume() {
 
 
     if [ "$(pamixer --get-mute)" = "true" ]; then
-        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" 'muted' -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-muted-panel.svg"
+        notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" '‍' -i "/usr/share/icons/Dracula/24@2x/panel/volume-level-muted-panel.svg"
     else
         notify-send -a progress -t 1500 -h 'string:wired-tag:volume' -h "int:value:$(pamixer --get-volume)" "$(pamixer --get-volume)%" -i $icon
     fi
 }
 
 notify_brightness() {
-    notify-send -a progress -t 1500 -h 'string:wired-tag:brightness' -h "int:value:$target" 'Brightness' 
+    notify-send -a progress -t 1500 -h 'string:wired-tag:brightness' -h "int:value:$target" "$target%" -i "/usr/share/icons/Dracula/24@2x/panel/notification-display-brightness.svg"
 }
 
 case "$1" in
