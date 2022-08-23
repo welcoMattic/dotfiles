@@ -5,8 +5,6 @@ do
   source $file
 done
 
-source $HOME/.zshrc.d/_gyro
-
 export DISABLE_AUTO_TITLE='true'
 
 autoload -U compinit && compinit
