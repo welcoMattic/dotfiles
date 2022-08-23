@@ -28,7 +28,7 @@
             name: "notif_root",
             parent: "",
             hook: (parent_anchor: TR, self_anchor: TR),
-            offset: (x: -10, y: 42),
+            offset: (x: -8, y: 36),
             render_anti_criteria: [ AppName("system") ],
             params: NotificationBlock((
                 monitor: 0,
