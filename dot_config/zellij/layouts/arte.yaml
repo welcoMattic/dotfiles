@@ -31,9 +31,3 @@ tabs:
       - direction: Horizontal
         run:
           command: {cmd: "zsh", args: ["-c", "cd /workspace/arte/presse-middleware && make docker-start && zsh"]}
-  - name: "can-i-tv"
-    direction: Vertical
-    parts:
-      - direction: Horizontal
-        run:
-          command: {cmd: "zsh", args: ["-c", "cd /workspace/arte/can-i-tv-back && zsh"]}
