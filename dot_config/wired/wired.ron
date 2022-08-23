@@ -1,18 +1,3 @@
-// ███╗   ██╗███████╗██╗  ██╗███╗   ██╗
-// ████╗  ██║██╔════╝╚██╗██╔╝████╗  ██║
-// ██╔██╗ ██║█████╗   ╚███╔╝ ██╔██╗ ██║
-// ██║╚██╗██║██╔══╝   ██╔██╗ ██║╚██╗██║
-// ██║ ╚████║███████╗██╔╝ ██╗██║ ╚████║
-// ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝
-//
-// This file is part of Itsnexn GNU/Linux Configuration.
-//
-// Twitter : https://twitter.com/itsnexn
-// Github  : https://github.com/Itsnexn
-// Website : Itsnexn.me
-//
-// License: MIT (https://opensource.org/licenses/MIT)
-
 (
     max_notifications: 0,
     timeout: 20000,
@@ -30,22 +15,30 @@
     debug_color: Color(r: 0.0, g: 1.0, b: 0.0, a: 1.0),
     debug_color_alt: Color(r: 1.0, g: 0.0, b: 0.0, a: 1.0),
 
+// background #282a36
+// border #6272a4
+// border low #44475a
+// border critical #ff5555
+// border paused #ffb86c
+// text color #f8f8f2
+// progress fill and border #8be9fd
+
     layout_blocks: [
         (
             name: "notif_root",
             parent: "",
             hook: (parent_anchor: TR, self_anchor: TR),
             offset: (x: -10, y: 42),
-			render_anti_criteria: [ AppName("system") ],
+            render_anti_criteria: [ AppName("system") ],
             params: NotificationBlock((
                 monitor: 0,
                 border_width: 2.0,
                 border_rounding: 0.0,
                 gap: (x: 0.0, y: 10.0),
-                background_color: (hex: "#11111b"),
-                border_color: (hex: "#cba6f7"),
-                border_color_low: (hex: "#89b4fa"),
-                border_color_critical: (hex: "#f38ba8"),
+                background_color: (hex: "#282a36"),
+                border_color: (hex: "#6272a4"),
+                border_color_low: (hex: "#44475a"),
+                border_color_critical: (hex: "#ff5555"),
                 notification_hook: (parent_anchor: BL, self_anchor: TL),
             )),
         ),
@@ -86,7 +79,7 @@
                 text: "%b",
                 padding: (left: 12.0, right: 5.0, top: 5.0, bottom: 12.0),
                 font: "JetBrainsMono Nerd Font 10",
-                color: (hex: "#a6adc8"),
+                color: (hex: "#f8f8f2"),
                 scroll_speed: 0.1,
                 lhs_dist: 24.0,
                 rhs_dist: 24.0,
@@ -125,9 +118,9 @@
                 border_width: 2.0,
                 border_rounding: 5.0,
                 fill_rounding: 5.0,
-                border_color: (hex: "#313244"),
-                background_color: (hex: "#1e1e2e"),
-                fill_color: (hex: "#cba6f7"),
+                border_color: (hex: "#6272a4"),
+                background_color: (hex: "#282a36"),
+                fill_color: (hex: "#8be9fd"),
                 width: -1.0,
                 height: 14.0,
             )),
@@ -173,10 +166,10 @@
                 border_width: 2.0,
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
-                text_color: (hex: "#a6adc8"),
-                border_color: (hex: "#313244"),
-                background_color: (hex: "#1e1e2e"),
-                fill_color: (hex: "#cba6f7"),
+                text_color: (hex: "#f8f8f2"),
+                border_color: (hex: "#6272a4"),
+                background_color: (hex: "#282a36"),
+                fill_color: (hex: "#8be9fd"),
                 dimensions: (
                     width:  (min: -1, max: -1),
                     height: (min: 0, max: 0)
@@ -198,10 +191,10 @@
                 border_width: 2.0,
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
-                text_color: (hex: "#a6adc8"),
-                border_color: (hex: "#313244"),
-                background_color: (hex: "#1e1e2e"),
-                fill_color: (hex: "#cba6f7"),
+                text_color: (hex: "#f8f8f2"),
+                border_color: (hex: "#6272a4"),
+                background_color: (hex: "#282a36"),
+                fill_color: (hex: "#8be9fd"),
                 dimensions: (
                     width:  (min: -1, max: -1),
                     height: (min: 0, max: 0)
@@ -223,10 +216,10 @@
                 border_width: 2.0,
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
-                text_color: (hex: "#a6adc8"),
-                border_color: (hex: "#313244"),
-                background_color: (hex: "#1e1e2e"),
-                fill_color: (hex: "#cba6f7"),
+                text_color: (hex: "#f8f8f2"),
+                border_color: (hex: "#6272a4"),
+                background_color: (hex: "#282a36"),
+                fill_color: (hex: "#8be9fd"),
                 dimensions: (
                     width:  (min: -1, max: -1),
                     height: (min: 0, max: 0)
