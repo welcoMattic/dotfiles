@@ -574,3 +574,6 @@ themes:
     cyan: [139, 233, 253]
     black: [0, 0, 0]
     white: [255, 255, 255]
+ui:
+  pane_frames:
+    rounded_corners: true
