@@ -51,7 +51,7 @@
             params: TextBlock((
                 text: "%s",
                 padding: (left: 12.0, right: 12.0, top: 12.0, bottom: 7.0),
-                font: "JetBrainsMono Nerd Font 11",
+                font: "SF Pro Display 11",
                 color: Color(hex: "#f8f8f2"),
                 dimensions: (
                     width: (min: 300, max: 300),
@@ -78,7 +78,7 @@
             params: ScrollingTextBlock((
                 text: "%b",
                 padding: (left: 12.0, right: 5.0, top: 5.0, bottom: 12.0),
-                font: "JetBrainsMono Nerd Font 10",
+                font: "SF Pro Display 10",
                 color: (hex: "#f8f8f2"),
                 scroll_speed: 0.1,
                 lhs_dist: 24.0,
@@ -135,7 +135,7 @@
             params: TextBlock((
                 text: "",
                 padding: (left: 0.0, right: 0.0, top: 0.0, bottom: 0.0),
-                font: "JetBrainsMono Nerd Font 11",
+                font: "SF Pro Display 11",
                 color: Color(hex: "#f8f8f2"),
                 dimensions: (
                     width: (min: 288, max: 288),
@@ -160,7 +160,7 @@
             render_criteria: [ ActionOther(0) ],
             params: ButtonBlock((
                 text: "%a",
-                font: "JetBrainsMono Nerd Font 10",
+                font: "SF Pro Display 10",
                 action: OtherAction(0),
                 padding: (left: 8.0, right: 8.0, top: 4.0, bottom: 4.0),
                 border_width: 2.0,
@@ -185,7 +185,7 @@
             render_criteria: [ ActionOther(1) ],
             params: ButtonBlock((
                 text: "%a",
-                font: "JetBrainsMono Nerd Font 10",
+                font: "SF Pro Display 10",
                 action: OtherAction(1),
                 padding: (left: 8.0, right: 8.0, top: 4.0, bottom: 4.0),
                 border_width: 2.0,
@@ -210,7 +210,7 @@
             render_criteria: [ ActionOther(2) ],
             params: ButtonBlock((
                 text: "%a",
-                font: "JetBrainsMono Nerd Font 10",
+                font: "SF Pro Display 10",
                 action: OtherAction(2),
                 padding: (left: 8.0, right: 8.0, top: 4.0, bottom: 4.0),
                 border_width: 2.0,
