@@ -3,8 +3,8 @@
     timeout: 20000,
     poll_interval: 16,
     shortcuts: (
-        notification_interact: 1,
-        notification_close: 2,
+        notification_interact: 2,
+        notification_close: 1,
         notification_closeall: 3,
     ),
     history_length: 100,
