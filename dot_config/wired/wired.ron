@@ -118,7 +118,7 @@
                 border_width: 2.0,
                 border_rounding: 5.0,
                 fill_rounding: 5.0,
-                border_color: (hex: "#6272a4"),
+                border_color: (hex: "#8be9fd"),
                 background_color: (hex: "#282a36"),
                 fill_color: (hex: "#8be9fd"),
                 width: -1.0,
@@ -167,7 +167,7 @@
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
                 text_color: (hex: "#f8f8f2"),
-                border_color: (hex: "#6272a4"),
+                border_color: (hex: "#8be9fd"),
                 background_color: (hex: "#282a36"),
                 fill_color: (hex: "#8be9fd"),
                 dimensions: (
@@ -192,7 +192,7 @@
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
                 text_color: (hex: "#f8f8f2"),
-                border_color: (hex: "#6272a4"),
+                border_color: (hex: "#8be9fd"),
                 background_color: (hex: "#282a36"),
                 fill_color: (hex: "#8be9fd"),
                 dimensions: (
@@ -217,7 +217,7 @@
                 border_rounding: 0.0,
                 fill_rounding: 0.0,
                 text_color: (hex: "#f8f8f2"),
-                border_color: (hex: "#6272a4"),
+                border_color: (hex: "#8be9fd"),
                 background_color: (hex: "#282a36"),
                 fill_color: (hex: "#8be9fd"),
                 dimensions: (
