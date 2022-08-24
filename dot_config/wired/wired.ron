@@ -116,7 +116,7 @@
             params: ProgressBlock((
                 padding: (left: 12.0, right: 12.0, top: 8.5, bottom: 12.5),
                 border_width: 2.0,
-                border_rounding: 5.0,
+                border_rounding: 3.0,
                 fill_rounding: 5.0,
                 border_color: (hex: "#8be9fd"),
                 background_color: (hex: "#282a36"),
