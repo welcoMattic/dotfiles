@@ -91,7 +91,7 @@ format_mem = "{mem_used}"
 [[block]]
 block = "cpu"
 interval = 1
-format = "{utilization} {frequency} {boost}"
+format = "{utilization} {frequency}"
 
 [[block]]
 block = "temperature"
