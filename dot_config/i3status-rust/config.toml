@@ -117,9 +117,9 @@ on_click = "pavucontrol"
 [[block]]
 block = "toggle"
 text = ""
-command_state = "xfconf-query -c xfce4-notifyd -p /do-not-disturb | grep true"
-command_on = "xfconf-query -c xfce4-notifyd -p /do-not-disturb -s true"
-command_off = "xfconf-query -c xfce4-notifyd -p /do-not-disturb -s false"
+command_state = "cat /tmp/wired-dnd-state | grep on"
+command_on = "wired --dnd on && echo 'on' > /tmp/wired-dnd-state"
+command_off = "wired --dnd off && echo 'off' > /tmp/wired-dnd-state"
 interval = 10
 icon_on = "bell-slash"
 icon_off = "bell"
