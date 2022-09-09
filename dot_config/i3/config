@@ -228,7 +228,7 @@ mode "resize" {
 }
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale /home/welcomattic/Pictures/wallpapers/DAY-01.jpg
+#exec --no-startup-id feh --bg-scale /home/welcomattic/Pictures/wallpapers/DAY-01.jpg
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
