@@ -1,9 +1,10 @@
 [Unit]
 Description=flowy
+PartOf=graphical-session.target
 
 [Service]
 Environment=XDG_CURRENT_DESKTOP=i3
-ExecStart= flowy --solar /home/welcomattic/Pictures/catalina/ 46.3177490234375 -0.45138877630233765
+ExecStart=flowy --solar /home/welcomattic/Pictures/catalina/ 46.3177490234375 -0.45138877630233765
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
