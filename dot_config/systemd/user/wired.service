@@ -5,6 +5,7 @@ PartOf=graphical-session.target
 [Service]
 Type=dbus
 BusName=org.freedesktop.Notifications
+ExecStartPre=/bin/sleep 10
 ExecStart=/usr/bin/wired
 
 [Install]
