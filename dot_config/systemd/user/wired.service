@@ -1,6 +1,5 @@
 [Unit]
 Description=Wired Notification Daemon
-PartOf=graphical-session.target
 
 [Service]
 Type=dbus
@@ -8,4 +7,4 @@ BusName=org.freedesktop.Notifications
 ExecStart=/usr/bin/wired
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=default.target
