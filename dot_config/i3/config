@@ -188,6 +188,8 @@ for_window [class="Imager"] floating enable
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+for_window [class="^.*"] border pixel 1
+
 # reload the configuration file
 #bindsym $mod+Shift+c reload
 
