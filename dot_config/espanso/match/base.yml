@@ -27,3 +27,5 @@ matches:
     replace: "mathieu.santostefano@gmail.com"
   - trigger: ":jolimail"
     replace: "msantostefano@jolicode.com"
+  - trigger: ":?"
+    replace: "⸮"
