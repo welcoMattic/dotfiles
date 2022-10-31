@@ -9,8 +9,8 @@ layout {
         }
     }
     tab focus=true split_direction="Vertical" {
-        pane focus=true split_direction="Vertical" {
-            pane command="zsh" {
+        pane split_direction="Vertical" {
+            pane focus=true command="zsh" {
                 args "-c" "cd /workspace/talks/painless-auth-with-access-tokens && zsh"
             }
         }
