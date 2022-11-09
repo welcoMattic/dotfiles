@@ -38,3 +38,5 @@ export PATH="$HOME/.krew/bin:$PATH"
 
 export EDITOR="nano"
 export TERMINAL="alacritty"
+
+export GTK_THEME=Dracula
