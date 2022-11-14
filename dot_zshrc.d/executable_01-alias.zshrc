@@ -7,6 +7,9 @@ alias pacman="sudo pacman"
 # Git
 alias g="git"
 
+# conventional commit
+alias convco="docker run --rm -v '$PWD:/tmp' -w /tmp convco/convco"
+
 #youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
