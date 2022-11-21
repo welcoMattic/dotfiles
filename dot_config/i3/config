@@ -320,10 +320,10 @@ client.background       #F8F8F2
 
 # Set inner/outer gaps
 gaps inner 2
-gaps outer 4
+gaps outer 2
 
 # Smart gaps (Only enable outer gaps when there is exactly one container)
-smart_gaps inverse_outer
+#smart_gaps inverse_outer
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
