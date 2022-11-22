@@ -247,6 +247,7 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id caffeine start
 exec --no-stratup-id ~/.fehbg
 exec --no-startup-id systemctl --user start flowy.service
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
