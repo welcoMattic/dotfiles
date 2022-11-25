@@ -75,7 +75,7 @@ bindcode 96 exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify 
 
 # Start Applications
 bindsym $mod+w exec firefox
-bindsym $mod+n exec nautilus
+bindsym $mod+n exec nemo
 bindsym $mod+t exec --no-startup-id pkill picom 
 bindsym $mod+Ctrl+t exec --no-startup-id picom
 bindsym $mod+Shift+s --release exec --no-startup-id flameshot gui
