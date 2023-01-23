@@ -24,6 +24,9 @@ floating_modifier $mod
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+# Stick window
+bindsym $mod+Shift+w sticky toggle
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
