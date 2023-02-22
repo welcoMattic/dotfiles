@@ -76,8 +76,7 @@ info_fg = "#F8F8F2"
 
 [[block]]
 block = "memory"
-#display_type = "memory"
-#format_mem = "{mem_used}"
+format = " $mem_used "
 
 [[block]]
 block = "cpu"
