@@ -11,7 +11,7 @@ music_prev = "\uf048"
 [[block]]
 block = "music"
 player = "spotify"
-buttons = ["prev", "play", "next"]
+#buttons = ["prev", "play", "next"]
 on_collapsed_click = "spotify"
 on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 hide_when_empty = false
