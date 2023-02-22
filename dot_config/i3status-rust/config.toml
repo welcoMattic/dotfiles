@@ -7,13 +7,12 @@ theme = "dracula.toml"
 icons = "awesome6"
 
 [icons.overrides]
-music_next = "\uf051"
-music_prev = "\uf048"
+#music_next = "\uf051"
+#music_prev = "\uf048"
 
 [[block]]
 block = "music"
 player = "spotify"
-#on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 format = " $icon {$combo.str(max_w:25,rot_interval:0.5)  $prev  $play  $next|} "
 [[block.click]]
 button = "left"
