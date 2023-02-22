@@ -112,3 +112,4 @@ block = "hueshift"
 hue_shifter = "redshift"
 format = " \uf042 $temperature "
 click_temp = 4500
+
