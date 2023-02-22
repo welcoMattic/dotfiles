@@ -126,10 +126,9 @@ icon_off = "bell"
 
 [[block]]
 block = "time"
-interval = 5
 format = "%d/%m/%Y %R"
 timezone = "Europe/Paris"
-interval = 60
+interval = 5
 locale = "fr_FR"
 
 [[block]]
