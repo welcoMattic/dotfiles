@@ -13,7 +13,10 @@ music_prev = "\uf048"
 block = "music"
 player = "spotify"
 #on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-format = " $icon {$combo.str(max_w:25,rot_interval:0.5) $prev $play $next|}"
+format = " $icon {$combo.str(max_w:25,rot_interval:0.5)  $prev  $play  $next|} "
+[[block.click]]
+button = "left"
+action = "play_pause"
 [block.theme_overrides]
 info_bg = "#50fa7b"
 idle_bg = "#282A36"
@@ -76,32 +79,21 @@ info_fg = "#F8F8F2"
 
 [[block]]
 block = "memory"
-format = " $mem_used "
+format = " $icon $mem_used "
 
 [[block]]
 block = "cpu"
 interval = 5
-format = "$utilization $frequency"
+format = " $icon $utilization $frequency "
 
 [[block]]
 block = "temperature"
 #collapsed = false
 interval = 10
-format = "$averageC°"
-
-#[[block]]
-#block = "net"
-#device = "wlp0s20f3"
-#format = "{speed_down;K*b} {speed_up;K*b}"
-#interval = 2
+format = " $icon $average "
 
 [[block]]
 block = "sound"
-
-#[[block]]
-#block = "backlight"
-#device = "intel_backlight"
-#invert_icons = true
 
 [[block]]
 block = "toggle"
@@ -115,14 +107,15 @@ icon_off = "bell"
 
 [[block]]
 block = "time"
-format = "%d/%m/%Y %R"
+format = " $icon $timestamp.datetime(f:'%d/%m/%Y %R', l:fr_FR) "
 timezone = "Europe/Paris"
 interval = 5
 
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage} {time}"
+format = " $icon $percentage $time "
+not_charging_format = " $icon $percentage "
 full_threshold = 100
 good = 60
 info = 50
