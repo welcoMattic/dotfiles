@@ -9,7 +9,7 @@ icons = "awesome6"
 [[block]]
 block = "music"
 player = "spotify"
-format = " $icon {$combo.str(max_w:25,rot_interval:0.5)  $prev  $play  $next|} "
+format = "  $icon {$combo.str(max_w:25,rot_interval:0.5)  $prev  $play  $next|}  "
 [[block.click]]
 button = "left"
 action = "play_pause"
@@ -20,26 +20,12 @@ idle_fg = "#F8F8F2"
 [block.icons_overrides]
 music = "<span font='Font Awesome 6 Brands 11'>\uf1bc</span>"
 
-#[[block]]
-#block = "music"
-#interface_name_exclude = ["spotify"]
-#buttons = ["prev", "play", "next"]
-#hide_when_empty = true
-#marquee_interval = 5
-#marquee_speed = 0.3
-#max_width = 120
-#dynamic_width = true
-#format = "{combo}"
-#[block.icons_overrides]
-#music = "\uf144"
-
 # Bose QC35 II
 [[block]]
 block = "bluetooth"
 mac = "2C:41:A1:04:21:AA"
-format = " \uf025 "
-disconnected_format = " \uf025 x "
-#hide_disconnected = false
+format = "  \uf025  "
+disconnected_format = "  \uf025 x  "
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -47,7 +33,7 @@ good_bg = "#bd93f9"
 [[block]]
 block = "bluetooth"
 mac = "C0:28:8D:91:9E:7C"
-format = " \uf192 "
+format = "  \uf192  "
 disconnected_format = ""
 [block.theme_overrides]
 good_bg = "#bd93f9"
@@ -56,8 +42,8 @@ good_bg = "#bd93f9"
 [[block]]
 block = "bluetooth"
 mac = "AC:90:85:DC:48:8C"
-format = " \uf179 \uf58f "
-disconnected_format = " \uf179 \uf58f x "
+format = "  \uf179 \uf58f  "
+disconnected_format = "  \uf179 \uf58f x  "
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -65,8 +51,8 @@ good_bg = "#bd93f9"
 [[block]]
 block = "bluetooth"
 mac = "F8:E5:3A:4D:12:61"
-format = " $icon { $percentage|} "
-disconnected_format = " $icon x "
+format = "  $icon { $percentage|}  "
+disconnected_format = "  $icon x  "
 [block.theme_overrides]
 good_bg = "#282A36"
 good_fg = "#F8F8F2"
@@ -75,25 +61,25 @@ info_fg = "#F8F8F2"
 
 [[block]]
 block = "memory"
-format = " $icon $mem_used "
+format = "  $icon $mem_used  "
 
 [[block]]
 block = "cpu"
 interval = 5
-format = " $icon $utilization $frequency "
+format = "  $icon $utilization $frequency  "
 
 [[block]]
 block = "temperature"
-#collapsed = false
 interval = 10
-format = " $icon $average "
+format = "  $icon $average  "
 
 [[block]]
 block = "sound"
+format = "  $icon {$volume.eng(w:2) |}  "
 
 [[block]]
 block = "toggle"
-format = " $icon "
+format = "  $icon  "
 command_state = "cat /tmp/wired-dnd-state | grep on"
 command_on = "wired --dnd on && echo 'on' > /tmp/wired-dnd-state"
 command_off = "wired --dnd off && echo 'off' > /tmp/wired-dnd-state"
@@ -103,15 +89,15 @@ icon_off = "bell"
 
 [[block]]
 block = "time"
-format = " $icon $timestamp.datetime(f:'%d/%m/%Y %R', l:fr_FR) "
+format = "  $icon $timestamp.datetime(f:'%d/%m/%Y %R', l:fr_FR)  "
 timezone = "Europe/Paris"
 interval = 5
 
 [[block]]
 block = "battery"
 interval = 10
-format = " $icon $percentage $time "
-not_charging_format = " $icon $percentage "
+format = "  $icon $percentage $time  "
+not_charging_format = "  $icon $percentage  "
 full_threshold = 100
 good = 60
 info = 50
