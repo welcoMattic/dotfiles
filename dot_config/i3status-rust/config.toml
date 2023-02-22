@@ -11,15 +11,8 @@ music_prev = "\uf048"
 [[block]]
 block = "music"
 player = "spotify"
-#buttons = ["prev", "play", "next"]
-on_collapsed_click = "spotify"
-on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-hide_when_empty = false
-marquee_interval = 5
-marquee_speed = 0.3
-dynamic_width = true
-max_width = 120
-format = "{combo} "
+#on_click = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+format = " $icon {$combo.str(max_w:25,rot_interval:0.5) $prev $play $next|}"
 [block.theme_overrides]
 info_bg = "#50fa7b"
 idle_bg = "#282A36"
