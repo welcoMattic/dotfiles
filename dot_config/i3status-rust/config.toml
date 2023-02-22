@@ -66,7 +66,7 @@ good_bg = "#bd93f9"
 [[block]]
 block = "bluetooth"
 mac = "F8:E5:3A:4D:12:61"
-format = " $icon $name{ $percentage|} "
+format = " $icon { $percentage|} "
 disconnected_format = "🖱 x"
 [block.theme_overrides]
 good_bg = "#282A36"
