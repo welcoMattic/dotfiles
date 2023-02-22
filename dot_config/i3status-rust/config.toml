@@ -100,7 +100,6 @@ format = "$averageC°"
 
 [[block]]
 block = "sound"
-on_click = "pavucontrol"
 
 #[[block]]
 #block = "backlight"
