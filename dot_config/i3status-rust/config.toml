@@ -88,7 +88,7 @@ format = "$utilization $frequency"
 
 [[block]]
 block = "temperature"
-collapsed = false
+#collapsed = false
 interval = 10
 format = "$averageC°"
 
