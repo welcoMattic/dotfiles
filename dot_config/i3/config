@@ -287,7 +287,8 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 bar {
-    font pango:SF Pro Display, Font Awesome 6 Free 11
+    #font pango:SF Pro Display, Font Awesome 6 Free 11
+    font pango:Hack Nerd Font, Font Awesome 6 Free 11
     height 28
     position top
     status_command i3status-rs ~/.config/i3status-rust/config.toml
