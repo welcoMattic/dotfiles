@@ -111,4 +111,4 @@ good_fg = "#f8f8f2"
 block = "hueshift"
 hue_shifter = "redshift"
 format = " $temperature "
-click_temp = 8500
+click_temp = 4000
