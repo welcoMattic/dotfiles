@@ -188,7 +188,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable
 for_window [class="Qtconfig-qt4"] floating enable sticky enable
 for_window [class="Imager"] floating enable
-for_window [class="vdu_controls"] floating sticky enable
+for_window [class="vdu_controls"] floating enable
 for_window [class="Gpaste-ui"] floating enable
 
 # switch to workspace with urgent window automatically
