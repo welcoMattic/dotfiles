@@ -1,5 +1,6 @@
 [theme]
 theme = "dracula.toml"
+invert_scrolling = true
 #scrolling = "natural"
 
 [icons]
