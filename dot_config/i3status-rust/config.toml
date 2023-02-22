@@ -78,19 +78,19 @@ info_fg = "#F8F8F2"
 
 [[block]]
 block = "memory"
-display_type = "memory"
-format_mem = "{mem_used}"
+#display_type = "memory"
+#format_mem = "{mem_used}"
 
 [[block]]
 block = "cpu"
-interval = 1
-format = "{utilization} {frequency}"
+interval = 5
+format = "$utilization $frequency"
 
 [[block]]
 block = "temperature"
 collapsed = false
 interval = 10
-format = "{average}C"
+format = "$averageC°"
 
 #[[block]]
 #block = "net"
