@@ -121,7 +121,6 @@ block = "time"
 format = "%d/%m/%Y %R"
 timezone = "Europe/Paris"
 interval = 5
-locale = "fr_FR"
 
 [[block]]
 block = "battery"
