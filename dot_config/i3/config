@@ -288,7 +288,7 @@ set_from_resource $term_color15    color15
 
 bar {
 #    font pango:SF Pro Display, Font Awesome 6 Free 11
-    font pango:SFMono Nerd Font Mono, Font Awesome 6 Free 14
+    font pango:SFMono Nerd Font Mono 14, Font Awesome 6 Free 14
 #    height 28
     height 24
     position top
