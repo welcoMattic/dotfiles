@@ -4,8 +4,7 @@ invert_scrolling = true
 theme = "dracula.toml"
 
 [icons]
-#icons = "awesome6"
-icons = "material-nf"
+icons = "awesome6"
 
 [[block]]
 block = "music"
