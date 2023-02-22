@@ -39,7 +39,7 @@ block = "bluetooth"
 mac = "2C:41:A1:04:21:AA"
 format = "\uf025"
 #format_unavailable = "\uf025 x"
-hide_disconnected = false
+#hide_disconnected = false
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -49,7 +49,7 @@ block = "bluetooth"
 mac = "C0:28:8D:91:9E:7C"
 format = "\uf192"
 #format_unavailable = "\uf192 x"
-hide_disconnected = true
+#hide_disconnected = true
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -59,7 +59,7 @@ block = "bluetooth"
 mac = "AC:90:85:DC:48:8C"
 format = "\uf179 \uf58f"
 #format_unavailable = "\uf179 \uf58f x"
-hide_disconnected = true
+#hide_disconnected = true
 [block.theme_overrides]
 good_bg = "#bd93f9"
 
@@ -69,7 +69,7 @@ block = "bluetooth"
 mac = "F8:E5:3A:4D:12:61"
 format = "{percentage}"
 #format_unavailable = "🖱 x"
-hide_disconnected = false
+#hide_disconnected = false
 [block.theme_overrides]
 good_bg = "#282A36"
 good_fg = "#F8F8F2"
