@@ -110,5 +110,5 @@ good_fg = "#f8f8f2"
 [[block]]
 block = "hueshift"
 hue_shifter = "redshift"
-format = " \ue420 $temperature "
+format = " \uf042 $temperature "
 click_temp = 4500
