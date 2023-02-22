@@ -109,7 +109,7 @@ block = "sound"
 
 [[block]]
 block = "toggle"
-format = " $icon"
+format = " $icon "
 command_state = "cat /tmp/wired-dnd-state | grep on"
 command_on = "wired --dnd on && echo 'on' > /tmp/wired-dnd-state"
 command_off = "wired --dnd off && echo 'off' > /tmp/wired-dnd-state"
