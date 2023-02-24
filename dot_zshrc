@@ -38,3 +38,5 @@ export PATH="$HOME/.krew/bin:$PATH"
 
 export EDITOR="nano"
 export TERMINAL="alacritty"
+
+source /usr/share/nvm/init-nvm.sh
