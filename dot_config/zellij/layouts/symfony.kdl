@@ -10,7 +10,7 @@ layout {
     }
     tab focus=true split_direction="Vertical" name="Symfony" {
         pane split_direction="Vertical" {
-            pane focus=true command="zsh" {
+            pane command="zsh" {
                 args "-c" "cd /workspace/symfony/symfony-work && zsh"
             }
         }
