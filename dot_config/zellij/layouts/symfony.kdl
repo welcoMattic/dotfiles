@@ -8,21 +8,21 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab focus=true split_direction="Vertical" {
+    tab focus=true split_direction="Vertical" name="Symfony" {
         pane split_direction="Vertical" {
             pane focus=true command="zsh" {
                 args "-c" "cd /workspace/symfony/symfony-work && zsh"
             }
         }
     }
-    tab split_direction="Vertical" {
+    tab split_direction="Vertical" name= "Symfony docs" {
         pane split_direction="Vertical" {
             pane command="zsh" {
                 args "-c" "cd /workspace/symfony/symfony-docs && zsh"
             }
         }
     }
-    tab split_direction="Vertical" {
+    tab split_direction="Vertical" name="Symfony merge" {
         pane split_direction="Vertical" {
             pane command="zsh" {
                 args "-c" "cd /workspace/symfony/symfony-merge && zsh"
