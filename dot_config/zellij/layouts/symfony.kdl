@@ -11,10 +11,24 @@ layout {
     tab focus=true split_direction="Vertical" {
         pane split_direction="Vertical" {
             pane focus=true command="zsh" {
-                args "-c" "cd /workspace/talks/painless-auth-with-access-tokens && zsh"
+                args "-c" "cd /workspace/symfony/symfony-work && zsh"
+            }
+        }
+    }
+    tab split_direction="Vertical" {
+        pane split_direction="Vertical" {
+            pane command="zsh" {
+                args "-c" "cd /workspace/symfony/symfony-docs && zsh"
+            }
+        }
+    }
+    tab split_direction="Vertical" {
+        pane split_direction="Vertical" {
+            pane command="zsh" {
+                args "-c" "cd /workspace/symfony/symfony-merge && zsh"
             }
         }
     }
 }
-session_name "Talks"
+session_name "Symfony"
 attach_to_session true
